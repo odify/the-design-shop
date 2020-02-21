@@ -1,45 +1,36 @@
+/* START */
+
+/* Farbe: #323A45 / #848484 */
+
 body{
 
     margin-top: 0;
     font-family: 'Karla';
-    
-
 }
-/* Farbe: #323A45 / #848484 */
 
 header{
 
     margin-bottom: 15px;
-
 }
-
 .logo{
     margin-right: 50%;
+
 }
-
-
 .logo a{
 
     color:rgb(15, 16, 17);
     text-decoration: none;
     font-size: x-large;
     font-weight: 100;
-
-
 }
-
 nav ul{
 
     text-align: right;
     margin-right: 10%;
-    
 }
-
-
 nav ul li{
-    
     display: inline;
-    /* padding: 2%; */
+     padding: 1%; 
     
 }
 
@@ -47,9 +38,13 @@ nav ul li a{
     text-decoration: none;
     color:#323A45;
 }
-
-
 /* SECTIONS WITH CONTENT */
+
+#imgx{
+    
+    width: 500px;
+    height: 400px;
+}
 
 img:hover{
     opacity: 0.7;
@@ -57,8 +52,6 @@ img:hover{
 }
 
 .section1{
-
-
 margin-top: 5%;
 margin-left: 5%;
 
@@ -91,12 +84,6 @@ margin-left: 5%;
     margin-top: 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
-    
-    
-    
-  
-    
 }
 
 .section1a img{
@@ -125,6 +112,11 @@ color: #848484;
    text-align: left;
    margin-right: 5%;
 }
+
+
+
+
+
 footer {
     width: 90%;
     text-align: center;
@@ -136,39 +128,54 @@ footer {
 
 .copyright span {
 
-
-
-    font-size: 2.7em;
+    font-size: 2.4em;
 }
 footer a {
-    font-size: large;
     text-decoration: none;
+    font-size: large;
     color: #323A45;
+
 }
-footer span {
-    font-weight: bold;
-}
+
+
 footer p {
 
+
+
+    color: #323A45;
     font-size: 1.1em;
     width: 80%;
-    color: #323A45;
+    margin-left: 5%;
+    text-align: center;
 }
+.designer{
+    margin-left: 4%;
+    text-align: center;
+}
+
+.contact{
+    margin-left: 4%;
+    text-align: center;
+
+}
+
+
+
 
 footer h3 {
     padding-bottom: 5vh;
     font-size: 1.3em;
-    font-weight: 300;
+    font-weight: 200;
     color: #323A45;
-}
-.it{
-    font-style: italic;
+    text-align: center;
 }
 .copyright {
     font-size: 0.8em;
     color: #848484;
     font-weight: lighter;
+    text-align: left;
 }
+
 .contact{
     text-align: center;
 
@@ -177,6 +184,9 @@ footer h3 {
     text-align: center;
 }
 
+/* MEDIA QUERIES */
+
+
 @media screen and (max-width:992px){
 
 
@@ -184,6 +194,7 @@ footer h3 {
     nav ul li{
     
         display: block;
+        text-align: right;
     }
 
     .section1a{
@@ -193,6 +204,13 @@ footer h3 {
 
         
     }
+    /* .flex3 p{
+        float: right;
+        margin-right: 40%;
+    } */
+
+
+
     #imgx{
 
         width: 400px;
@@ -204,14 +222,23 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr;
     }
-}
+
+    .contact{
+        text-align: center;
+    
+    }
+    .newsletter{
+        text-align: center;
+    }
+    
+
 }
 @media screen and (max-width:768px){
 
     nav ul li{
     
         display: block;
-        padding: 1%;
+        text-align: right;
         
     }
 
@@ -225,10 +252,10 @@ footer h3 {
 
         display: grid;
         grid-template-columns: 1fr;
-       
-        
-
-        
+        /* .flex3 p{
+            float: right;
+            margin-right: 40%;
+        } */
     }
     #imgx{
 
@@ -241,22 +268,37 @@ footer h3 {
         display: grid;
         grid-template-columns:repeat(1fr 1fr);
     }
+    .designer{
+        margin-left: 7%;
+        text-align: center;
+    }
+    
+    .contact{
+        margin-left: 6%;
+        text-align: center;
+    
+    }
+    .newsletter{
+        text-align: center;
+    }
 }
 @media screen and (max-width:576px){
-
-
-
     nav ul li{
     
         display: block;
-        padding: 1%;
+        text-align: center;
         
     }
-
+    .logo{
+        margin-right: 0%;
+        text-align: center;
     
-
-
-
+    }
+    /* .flex3 p{
+        float: right;
+        margin-right: 40%;
+    }
+ */
     .section1a{
 
         display: grid;
@@ -266,8 +308,8 @@ footer h3 {
     }
     #imgx{
         margin-left: 10%;
-        width: 300px;
-        height: 200px;
+        width: 350px;
+        height: 250px;
     }
     footer {
         text-align: center;
@@ -276,7 +318,20 @@ footer h3 {
         display: grid;
         grid-template-columns: 1fr
     }
+    .newsletter{
+        text-align: center;
+
+    }
+    .copyright{
+        text-align: center;
+    }
     .contact{
-        margin-left: 10%;
+        text-align: center;
+    
+    }
+    .newsletter{
+        text-align: center;
     }
 }
+
+/* END */
